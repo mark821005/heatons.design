@@ -1,9 +1,16 @@
-import { Button } from "@/components/ui/button";
+import { BrowserRouter, Routes, Route } from "react-router";
+import Home from "./pages/Home";
+import About from "./pages/About";
 
-export default function App() {
+function App() {
   return (
-    <div className="flex h-screen items-center justify-center">
-      <Button variant="default">TypeScript Button</Button>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
+export default App;
