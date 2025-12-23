@@ -36,7 +36,7 @@ export default function Header() {
                       </a>
                     </NavigationMenuLink>
                   </li>
-                  <ListItem href="/docs" title="Introduction">
+                  <ListItem href="/about" title="Introduction">
                     Re-usable components built using Radix UI and Tailwind CSS.
                   </ListItem>
                   <ListItem href="/docs/installation" title="Installation">
@@ -67,7 +67,7 @@ function ListItem({
   return (
     <li {...props}>
       <NavigationMenuLink asChild>
-        <Link href={href}>
+        <Link to={href}>
           <div className="text-sm leading-none font-medium">{title}</div>
           <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
             {children}
