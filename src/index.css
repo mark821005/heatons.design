@@ -135,11 +135,54 @@
     font-weight: 300;
     color: #000;
   }
+  strong {
+    font-weight: 500;
+  }
   h1,
   h2,
   h3,
   h4 {
     font-family: var(--font-serif);
     font-weight: 400;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin-bottom: 1rem;
+  }
+  .scrollAnim {
+    animation: reveal-bg linear both;
+  }
+  .scrollScale {
+    animation: reveal-scale linear both;
+  }
+  .scrollAnim,
+  .scrollScale {
+    view-timeline-name: --item-reveal;
+    view-timeline-axis: block;
+    animation-timeline: --item-reveal;
+    animation-range: entry 0% cover 30%;
+  }
+  @keyframes reveal-bg {
+    from {
+      background-color: var(--color-slate-300);
+      transform: scale(0.9);
+    }
+    to {
+      background-color: var(--color-slate-100);
+      transform: scale(1);
+    }
+  }
+  @keyframes reveal-scale {
+    from {
+      transform: scale(0.8) translateY(50px);
+      opacity: 0.5;
+    }
+    to {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
   }
 }
