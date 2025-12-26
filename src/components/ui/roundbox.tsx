@@ -1,8 +1,12 @@
 import type { ReactNode } from "react";
+import { Button } from "./button";
+import { ArrowUpRight } from "lucide-react";
 
 interface RoundBoxItem {
   heading: string;
   content: ReactNode;
+  link?: string;
+  buttonText?: string;
 }
 
 interface RoundBoxProps {
@@ -18,7 +22,14 @@ export default function RoundBox({ blockheading, items }: RoundBoxProps) {
         {items.map((item, index) => (
           <div key={index} className="md:basis-1/2 lg:basis-1/3 pr-16 my-6">
             <strong>{item.heading}</strong>
-            <div>{item.content}</div>
+            <p className="my-4">{item.content}</p>
+            {item.link && (
+              <a href={item.link} rel="noopener noreferrer">
+                <Button size="sm" className="mt-2">
+                  {item.buttonText || "Learn More"} <ArrowUpRight />
+                </Button>
+              </a>
+            )}
           </div>
         ))}
       </div>

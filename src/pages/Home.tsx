@@ -36,28 +36,36 @@ const myData = [
 ];
 const roundBoxData = [
   {
-    heading: "Browse",
-    content: "Project Alpha",
+    heading: "01 Browse",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    link: "/about",
+    buttonText: "Browse styles",
   },
   {
-    heading: "Consultation",
-    content: "Project Alpha",
+    heading: "02 Consultation",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    heading: "Sourcing",
-    content: "Project Alpha",
+    heading: "03 Sourcing",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    heading: "Proof",
-    content: "Project Alpha",
+    heading: "04 Proof",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    heading: "Print",
-    content: "Project Alpha",
+    heading: "05 Print",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    heading: "Delivery",
-    content: "Project Alpha",
+    heading: "06 Delivery",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
 ];
 export default function Home() {
@@ -72,7 +80,7 @@ export default function Home() {
           <Leftright
             heading={"welcome to heatons.design"}
             content={
-              <>
+              <div className="scrolling-text">
                 <p>
                   Once upon a time, in a far-off land, there was a very lazy
                   king who spent all day lounging on his throne. One day, his
@@ -91,7 +99,7 @@ export default function Home() {
                   advisors came to him with a problem: the kingdom was running
                   out of money.
                 </p>
-              </>
+              </div>
             }
           />
           <RoundBox
