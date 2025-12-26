@@ -95,7 +95,7 @@ export default function Home() {
             }
           />
           <RoundBox
-            blockheading={"overview: how it works"}
+            blockheading={"in brief: how it works"}
             items={roundBoxData}
           />
           <ImageGrid items={myData} />
