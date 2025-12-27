@@ -9,7 +9,7 @@ import About from "./pages/About";
 function App() {
   const location = useLocation();
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="popLayout">
       <Header />
       <div className="container mx-auto px-4">
         <Routes location={location} key={location.pathname}>
