@@ -27,7 +27,7 @@ export default function Header() {
         [animation-range:0px_100px]
         animate-[shrink-header_linear_forwards]
         
-        py-8"
+        py-8 px-4"
     >
       <div className="flex md:flex-row md:items-start justify-between">
         <div className="basis-2/4 md:basis-1/4">
