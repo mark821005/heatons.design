@@ -61,14 +61,14 @@ export default function Header() {
                         Re-usable components built using Radix UI and Tailwind
                         CSS.
                       </ListItem>
-                      <ListItem href="/docs/installation" title="Installation">
+                      <ListItem href="/docs/installation" title="Methodology">
                         How to install dependencies and structure your app.
                       </ListItem>
                       <ListItem
                         href="/docs/primitives/typography"
-                        title="Typography"
+                        title="Printing"
                       >
-                        Styles for headings, paragraphs, lists...etc
+                        All you need to know about the final print you recieve
                       </ListItem>
                     </ul>
                   </NavigationMenuContent>
@@ -91,16 +91,16 @@ export default function Header() {
                           </a>
                         </NavigationMenuLink>
                       </li>
-                      <ListItem href="/about" title="Introduction">
+                      <ListItem href="/about" title="Example Gellery">
                         Re-usable components built using Radix UI and Tailwind
                         CSS.
                       </ListItem>
-                      <ListItem href="/docs/installation" title="Installation">
+                      <ListItem href="/docs/installation" title="Case Studies">
                         How to install dependencies and structure your app.
                       </ListItem>
                       <ListItem
                         href="/docs/primitives/typography"
-                        title="Typography"
+                        title="Other Work"
                       >
                         Styles for headings, paragraphs, lists...etc
                       </ListItem>
