@@ -8,60 +8,50 @@ import { AnimatedPage } from "@/components/AnimatedPage";
 
 const myData = [
   {
-    src: "/home/grid_1.png",
+    src: "/home/grid_1.webp",
     alt: "Project Alpha",
   },
   {
-    src: "/home/grid_2.png",
+    src: "/home/grid_2.webp",
     alt: "Project Beta",
   },
   {
-    src: "/home/grid_3.png",
+    src: "/home/grid_3.webp",
     alt: "Project Beta",
   },
   {
-    src: "/home/grid_4.png",
+    src: "/home/grid_4.webp",
     alt: "Project Beta",
   },
   {
-    src: "/home/grid_5.png",
+    src: "/home/grid_5.webp",
     alt: "Project Beta",
   },
   {
-    src: "/home/grid_6.png",
+    src: "/home/grid_6.webp",
     alt: "Project Beta",
   },
 ];
 const roundBoxData = [
   {
-    heading: "01 Browse",
+    heading: "01 Browse & Inspire",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     link: "/about",
     buttonText: "Browse examples",
   },
   {
-    heading: "02 Consultation",
+    heading: "02 Consultation / Sourcing",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    heading: "03 Sourcing",
+    heading: "03 Proofing & Printing",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    heading: "04 Proof",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    heading: "05 Print",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    heading: "06 Delivery",
+    heading: "04 Delivery",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },

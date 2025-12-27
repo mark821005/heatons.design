@@ -4,9 +4,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const images = [
-  "/home/home_hero.png",
-  "/home/home_hero_2.png",
-  "/home/home_hero_3.png",
+  "/home/home_hero.webp",
+  "/home/home_hero_2.webp",
+  "/home/home_hero_3.webp",
 ];
 
 export function MotionCarousel() {
