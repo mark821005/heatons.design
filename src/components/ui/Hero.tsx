@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="basis-3/8">
           <h1 className="scroll-m-20 text-5xl">your life, reimagined.</h1>
           <p>
-            Bespoke art, customised to you
+            Bespoke art, customised to you.
             <br />
             Supplied as the highest quality print.
           </p>
