@@ -20,8 +20,16 @@ import { MenuIcon } from "lucide-react";
 
 export default function Header() {
   return (
-    <>
-      <div className="flex md:flex-row md:items-start justify-between py-8">
+    <header
+      className="sticky top-0 z-50 transition-colors duration-300
+        
+        [animation-timeline:scroll()]
+        [animation-range:0px_100px]
+        animate-[shrink-header_linear_forwards]
+        
+        py-8"
+    >
+      <div className="flex md:flex-row md:items-start justify-between">
         <div className="basis-2/4 md:basis-1/4">
           <a
             href="/"
@@ -42,7 +50,7 @@ export default function Header() {
                       <NavigationMenuLink asChild>
                         <span className="overflow-hidden from-muted/50 to-muted flex h-full p-[0] w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden transition-all duration-200 select-none focus:shadow-md">
                           <img
-                            src="/public/nav/nav_about.png"
+                            src="/nav/nav_about.png"
                             className="h-full w-full object-cover"
                           />
                         </span>
@@ -197,7 +205,7 @@ export default function Header() {
           </Sheet>
         </div>
       </div>
-    </>
+    </header>
   );
 }
 

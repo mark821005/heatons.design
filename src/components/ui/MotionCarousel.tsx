@@ -47,6 +47,7 @@ export function MotionCarousel() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0.5 }}
           transition={{ duration: 0.2, ease: "easeIn" }}
+          loading="eager"
           className="absolute inset-0 w-full h-full object-cover"
         />
       </AnimatePresence>

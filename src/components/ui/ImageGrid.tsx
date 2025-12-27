@@ -20,6 +20,7 @@ export function ImageGrid({ items }: ImageGridProps) {
               src={item.src}
               alt={item.alt || "Grid image"}
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
             />
           </div>
         ))}

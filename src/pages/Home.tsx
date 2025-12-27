@@ -40,7 +40,7 @@ const roundBoxData = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     link: "/about",
-    buttonText: "Browse styles",
+    buttonText: "Browse examples",
   },
   {
     heading: "02 Consultation",
@@ -71,9 +71,7 @@ const roundBoxData = [
 export default function Home() {
   return (
     <AnimatedPage>
-      <header className="relative z-10">
-        <Header />
-      </header>
+      <Header />
       <main>
         <Hero />
         <div className="">

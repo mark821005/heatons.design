@@ -211,4 +211,12 @@
       opacity: 1;
     }
   }
+  @keyframes shrink-header {
+    to {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+    }
+  }
 }
