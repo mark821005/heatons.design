@@ -61,7 +61,7 @@ export default function Header() {
                         Re-usable components built using Radix UI and Tailwind
                         CSS.
                       </ListItem>
-                      <ListItem href="/docs/installation" title="Methodology">
+                      <ListItem href="/methodology" title="Methodology">
                         How to install dependencies and structure your app.
                       </ListItem>
                       <ListItem

@@ -128,7 +128,7 @@
   }
   body:has([data-state="open"]) main,
   body:has([data-state="open"]) footer {
-    filter: blur(10px) grayscale();
+    filter: blur(7px) grayscale(50%);
     opacity: 0.6;
     pointer-events: none; /* Prevents clicking links while blurred */
     transition: all 0.4s ease-out;

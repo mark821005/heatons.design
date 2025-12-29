@@ -20,7 +20,7 @@ export default function RoundBox({ blockheading, items }: RoundBoxProps) {
       <h1 className="scroll-m-20 text-4xl">{blockheading}</h1>
       <div className="md:flex md:flex-row md:flex-wrap md:justify-start md:items-start">
         {items.map((item, index) => (
-          <div key={index} className="md:basis-1/2 xl:basis-1/4 pr-16 my-6">
+          <div key={index} className="md:basis-1/2 pr-16 my-6">
             <strong>{item.heading}</strong>
             <p className="my-4">{item.content}</p>
             {item.link && (
