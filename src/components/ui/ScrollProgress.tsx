@@ -12,7 +12,7 @@ export function ScrollProgress() {
 
   return (
     <motion.div
-      className="h-0.5 bg-linear-to-r from-cyan-400 to-red-600 z-[9999] origin-left"
+      className="h-0.75 bg-linear-to-r from-cyan-400 via-green-300 to-red-600 z-[9999] origin-left"
       style={{ scaleX }}
     />
   );

@@ -197,8 +197,16 @@
   .scrollScale {
     animation: reveal-scale linear both;
   }
+  .scrollLeft {
+    animation: reveal-left linear both;
+  }
+  .scrollRight {
+    animation: reveal-right linear both;
+  }
   .scrollAnim,
-  .scrollScale {
+  .scrollScale,
+  .scrollLeft,
+  .scrollRight {
     view-timeline-name: --item-reveal;
     view-timeline-axis: block;
     animation-timeline: --item-reveal;
@@ -207,7 +215,7 @@
   @keyframes reveal-bg {
     from {
       background-color: var(--color-slate-300);
-      transform: scale(0.9);
+      transform: scale(0.7);
     }
     to {
       background-color: var(--color-slate-100);
@@ -228,6 +236,26 @@
     to {
       background-color: rgba(255, 255, 255, 0.8);
       backdrop-filter: blur(12px);
+    }
+  }
+  @keyframes reveal-left {
+    from {
+      transform: scale(0.8) translateX(-100%);
+      opacity: 0.5;
+    }
+    to {
+      transform: scale(1) translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes reveal-right {
+    from {
+      transform: scale(0.8) translateX(100%);
+      opacity: 0.5;
+    }
+    to {
+      transform: scale(1) translateX(0);
+      opacity: 1;
     }
   }
 }
