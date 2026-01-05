@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router";
 import { MotionCarousel } from "@/components/ui/MotionCarousel";
 
 export default function Hero() {

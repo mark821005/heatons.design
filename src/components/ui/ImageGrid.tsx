@@ -1,5 +1,3 @@
-import React from "react";
-
 interface GridItem {
   src: string;
   alt?: string;

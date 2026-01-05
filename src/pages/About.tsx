@@ -1,7 +1,4 @@
-import { Link } from "react-router";
 import { AnimatedPage } from "@/components/AnimatedPage";
-import Header from "@/components/ui/Header";
-import Footer from "@/components/ui/Footer";
 import ImageTextText from "@/components/ui/ImageTextText";
 
 export default function About() {

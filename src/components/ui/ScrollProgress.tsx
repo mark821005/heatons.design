@@ -5,14 +5,14 @@ export function ScrollProgress() {
 
   // useSpring makes the bar move smoothly instead of snapping
   const scaleX = useSpring(scrollYProgress, {
-    stiffness: 400,
-    damping: 30,
-    restDelta: 0.001,
+    stiffness: 200,
+    damping: 20,
+    restDelta: 1.5,
   });
 
   return (
     <motion.div
-      className="h-1 bg-orange-600 z-[9999] origin-left"
+      className="h-0.5 bg-linear-to-r from-cyan-400 to-red-600 z-[9999] origin-left"
       style={{ scaleX }}
     />
   );

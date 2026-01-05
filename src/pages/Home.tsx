@@ -1,7 +1,5 @@
 import Leftright from "@/components/ui/leftright";
-import { Button } from "@/components/ui/button";
 import Hero from "@/components/ui/Hero";
-import { Link } from "react-router";
 import RoundBox from "@/components/ui/roundbox";
 import { ImageGrid } from "@/components/ui/ImageGrid";
 import { AnimatedPage } from "@/components/AnimatedPage";

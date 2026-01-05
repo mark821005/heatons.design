@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react"; // Added useEffect
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const images = [
   "/home/home_hero.webp",
@@ -15,8 +13,6 @@ export function MotionCarousel() {
 
   const nextStep = () =>
     setIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  const prevStep = () =>
-    setIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
 
   // --- Autorotate Logic ---
   useEffect(() => {
