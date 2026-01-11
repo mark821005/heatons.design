@@ -14,7 +14,7 @@ export default function Footer() {
               title="heatons.design home"
               className="font-serif text-3xl"
             >
-              heatons.design
+              heatons design
             </a>
           </div>
           <div>

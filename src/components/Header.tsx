@@ -32,7 +32,7 @@ export default function Header() {
                 title="heatons.design home"
                 className="font-serif text-3xl"
               >
-                heatons.design
+                heatons design
               </a>
             </div>
             <div className="hidden md:block">
