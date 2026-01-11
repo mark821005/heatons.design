@@ -2,12 +2,15 @@
 
 import { useState, useEffect } from "react"; // Added useEffect
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const images = [
   "/home/home_hero.webp",
   "/home/home_hero_2.webp",
   "/home/home_hero_3.webp",
 ];
+
+const MotionImage = motion(Image);
 
 export function MotionCarousel() {
   const [index, setIndex] = useState(0);
@@ -38,15 +41,18 @@ export function MotionCarousel() {
       onMouseLeave={() => setIsHovered(false)}
     >
       <AnimatePresence mode="wait">
-        <motion.img
+        <MotionImage
           key={index}
           src={images[index]}
+          alt={`Carousel image ${index + 1}`}
+          fill // Uses the parent aspect ratio
+          priority={index === 0} // Loads the first image instantly for better speed
           initial={{ opacity: 0.5 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0.5 }}
           transition={{ duration: 0.2, ease: "easeIn" }}
-          loading="eager"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="object-cover" // Replaces w-full h-full
+          sizes="(max-width: 896px) 100vw, 896px" // Helps Next.js serve the right size
         />
       </AnimatePresence>
 

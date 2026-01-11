@@ -269,7 +269,8 @@
 
   .scrollScale,
   .scrollLeft,
-  .scrollRight {
+  .scrollRight,
+  .scrollAnim {
     view-timeline-name: --item-reveal;
     view-timeline-axis: block;
     animation-timeline: --item-reveal;
