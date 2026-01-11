@@ -15,13 +15,13 @@ import { ScrollProgress } from "./ui/ScrollProgress";
 export default function Header() {
   return (
     <header
-      className="sticky top-0 z-50 transition-colors duration-300 sticky-shrink
+      className="sticky top-0 z-50 transition-colors duration-300 sticky-shrink py-0
         
-        [animation-timeline:scroll()]
+        [animation-timeline:scroll(root)]
         [animation-range:0px_100px]
         animate-[shrink-header_linear_forwards]
         
-        py-0"
+        "
     >
       <div className="py-4">
         <div className="container mx-auto px-4">
