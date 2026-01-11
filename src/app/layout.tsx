@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Montez, Zalando_Sans } from "next/font/google"; // Note: Use the actual package name if Zalando Sans is local
+import { Montez, Inter } from "next/font/google"; // Note: Use the actual package name if Zalando Sans is local
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -11,9 +11,7 @@ const montez = Montez({
   variable: "--font-serif", // Matches your globals.css variable
 });
 
-// 2. Setup Zalando Sans (Sans)
-// Note: If Zalando Sans is a custom local font, use next/font/local instead
-const zalandoSans = Zalando_Sans({
+const zalandoSans = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
