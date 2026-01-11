@@ -80,7 +80,7 @@
   @keyframes reveal-bg {
     from {
       background-color: var(--color-slate-300);
-      transform: scale(0.85);
+      transform: scale(0.8);
     }
     to {
       background-color: var(--color-slate-100);
