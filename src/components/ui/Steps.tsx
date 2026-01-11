@@ -1,6 +1,10 @@
+import Image from "next/image";
+
 interface Steps {
   heading: string;
   content: string;
+  image: string;
+  alt: string;
 }
 
 interface StepProps {
@@ -11,8 +15,15 @@ export function Steps({ items }: StepProps) {
   return (
     <div className="w-full mx-auto my-4 md:my-12 lg:my-24">
       {items.map((item, index) => (
-        <div className=" grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
-          <div className="md:col-span-1 scrollLeft">IMAGE</div>
+        <div className=" grid grid-cols-1 md:grid-cols-3 gap-12 mb-24 ">
+          <div className="md:col-span-1 scrollLeft rounded-2xl overflow-hidden">
+            <Image
+              alt={item.alt}
+              src={item.image}
+              className="object-cover"
+              fill
+            />
+          </div>
           <div
             key={index}
             className="scrollRight md:col-span-2 group relative overflow-hidden rounded-2xl bg-zinc-100 p-8 md:p-12"
