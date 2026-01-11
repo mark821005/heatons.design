@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, useScroll, useSpring } from "framer-motion";
 
 export function ScrollProgress() {
@@ -6,7 +8,7 @@ export function ScrollProgress() {
   // useSpring makes the bar move smoothly instead of snapping
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 200,
-    damping: 20,
+    damping: 100,
     restDelta: 1.5,
   });
 

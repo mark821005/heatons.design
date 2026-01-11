@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import { AnimatedPage } from "@/components/AnimatedPage";
 import ImageTextText from "@/components/ui/ImageTextText";
 

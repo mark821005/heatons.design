@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react"; // Added useEffect
 import { motion, AnimatePresence } from "framer-motion";
 

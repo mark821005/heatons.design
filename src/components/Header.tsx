@@ -8,14 +8,14 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Link } from "react-router";
+import Link from "next/link";
 import { MenuIcon } from "lucide-react";
-import { ScrollProgress } from "./ScrollProgress";
+import { ScrollProgress } from "./ui/ScrollProgress";
 
 export default function Header() {
   return (
     <header
-      className="sticky top-0 z-50 transition-colors duration-300
+      className="sticky top-0 z-50 transition-colors duration-300 sticky-shrink
         
         [animation-timeline:scroll()]
         [animation-range:0px_100px]
@@ -191,18 +191,18 @@ export default function Header() {
                 </SheetTrigger>
                 <SheetContent side="right" className="p-4">
                   <div className="flex flex-col gap-4 mt-8">
-                    <Link to="/" className="border-b pb-2">
+                    <Link href="/" className="border-b pb-2">
                       Home
                     </Link>
-                    <Link to="/about" className="border-b pb-2">
+                    <Link href="/about" className="border-b pb-2">
                       About
                     </Link>
                     <div>
-                      <Link to="/about" className=" px-2 text-sm">
+                      <Link href="/about" className=" px-2 text-sm">
                         About
                       </Link>
                     </div>
-                    <Link to="/contact" className="border-b pb-2">
+                    <Link href="/contact" className="border-b pb-2">
                       Contact
                     </Link>
                   </div>
@@ -226,7 +226,7 @@ function ListItem({
   return (
     <li {...props}>
       <NavigationMenuLink asChild>
-        <Link to={href}>
+        <Link href={href}>
           <div className="text-sm leading-none font-medium">{title}</div>
           <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
             {children}

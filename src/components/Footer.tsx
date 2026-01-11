@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import Link from "next/link";
 
 const date = new Date();
 const year = date.getFullYear();
@@ -19,46 +19,46 @@ export default function Footer() {
           </div>
           <div>
             <strong className="block mb-4">About</strong>
-            <Link to="/about" className="border-b pb-2 block">
+            <Link href="/about" className="border-b pb-2 block">
               Link one
             </Link>
-            <Link to="/about" className="border-b pb-2 block">
+            <Link href="/about" className="border-b pb-2 block">
               Link two
             </Link>
-            <Link to="/about" className="border-b pb-2 block">
+            <Link href="/about" className="border-b pb-2 block">
               Link three
             </Link>
-            <Link to="/about" className="border-b pb-2 block">
+            <Link href="/about" className="border-b pb-2 block">
               Link four
             </Link>
           </div>
           <div>
             <strong className="block mb-4">About</strong>
-            <Link to="/about" className="border-b pb-2 block">
+            <Link href="/about" className="border-b pb-2 block">
               Link one
             </Link>
-            <Link to="/about" className="border-b pb-2 block">
+            <Link href="/about" className="border-b pb-2 block">
               Link two
             </Link>
-            <Link to="/about" className="border-b pb-2 block">
+            <Link href="/about" className="border-b pb-2 block">
               Link three
             </Link>
-            <Link to="/about" className="border-b pb-2 block">
+            <Link href="/about" className="border-b pb-2 block">
               Link four
             </Link>
           </div>
           <div>
             <strong className="block mb-4">About</strong>
-            <Link to="/about" className="border-b pb-2 block">
+            <Link href="/about" className="border-b pb-2 block">
               Link one
             </Link>
-            <Link to="/about" className="border-b pb-2 block">
+            <Link href="/about" className="border-b pb-2 block">
               Link two
             </Link>
-            <Link to="/about" className="border-b pb-2 block">
+            <Link href="/about" className="border-b pb-2 block">
               Link three
             </Link>
-            <Link to="/about" className="border-b pb-2 block">
+            <Link href="/about" className="border-b pb-2 block">
               Link four
             </Link>
           </div>

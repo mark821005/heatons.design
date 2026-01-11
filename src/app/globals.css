@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montez&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -43,6 +41,58 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* ADD THESE: Register your custom animations as Tailwind utilities */
+  --animate-shrink: shrink-header linear both;
+  --animate-reveal-scale: reveal-scale linear both;
+  --animate-reveal-left: reveal-left linear both;
+  --animate-reveal-right: reveal-right linear both;
+
+  --font-sans: "Zalando Sans", ui-sans-serif, system-ui;
+  --font-serif: "Montez", cursive;
+
+  @keyframes shrink-header {
+    to {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      background-color: var(--color-white-80);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+    }
+  }
+
+  @keyframes reveal-scale {
+    from {
+      transform: scale(0.8) translateY(50px);
+      opacity: 0.5;
+    }
+    to {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes reveal-left {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes reveal-right {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 }
 
 :root {
@@ -114,11 +164,6 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-@theme {
-  --font-sans: "Zalando Sans", sans-serif;
-  --font-serif: "Montez", sans-serif;
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -126,15 +171,7 @@
   body {
     @apply bg-background text-foreground;
   }
-  body:has([data-state="open"]) main,
-  body:has([data-state="open"]) footer {
-    filter: blur(7px) grayscale(50%);
-    opacity: 0.6;
-    pointer-events: none; /* Prevents clicking links while blurred */
-    transition: all 0.4s ease-out;
-  }
 
-  /* 2. Default state for smooth transition back */
   main,
   footer {
     transition: all 0.4s ease-out;
@@ -176,7 +213,6 @@
       color: rgb(9, 9, 11); /* zinc-950 (black/dark) */
     }
   }
-
   .scrolling-text {
     /* Define the timeline */
     view-timeline-name: --text-reveal;
@@ -212,50 +248,31 @@
     animation-timeline: --item-reveal;
     animation-range: entry 0% cover 30%;
   }
-  @keyframes reveal-bg {
-    from {
-      background-color: var(--color-slate-300);
-      transform: scale(0.7);
-    }
-    to {
-      background-color: var(--color-slate-100);
-      transform: scale(1);
-    }
+
+  /* Smooth Blur for the Header/Nav */
+  body:has([data-state="open"]) main,
+  body:has([data-state="open"]) footer {
+    filter: blur(7px) grayscale(50%);
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.4s ease-out;
   }
-  @keyframes reveal-scale {
-    from {
-      transform: scale(0.8) translateY(50px);
-      opacity: 0.5;
-    }
-    to {
-      transform: scale(1) translateY(0);
-      opacity: 1;
-    }
+
+  /* Your Scroll-Driven Animation Classes */
+  .sticky-shrink {
+    view-timeline-name: --nav;
+    view-timeline-axis: block;
+    animation-timeline: --nav;
+    animation-range: entry 0% cover 15%;
+    @apply animate-shrink; /* Uses the keyframe defined in @theme */
   }
-  @keyframes shrink-header {
-    to {
-      background-color: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(12px);
-    }
-  }
-  @keyframes reveal-left {
-    from {
-      transform: scale(0.8) translateX(-100%);
-      opacity: 0.5;
-    }
-    to {
-      transform: scale(1) translateX(0);
-      opacity: 1;
-    }
-  }
-  @keyframes reveal-right {
-    from {
-      transform: scale(0.8) translateX(100%);
-      opacity: 0.5;
-    }
-    to {
-      transform: scale(1) translateX(0);
-      opacity: 1;
-    }
+
+  .scrollScale,
+  .scrollLeft,
+  .scrollRight {
+    view-timeline-name: --item-reveal;
+    view-timeline-axis: block;
+    animation-timeline: --item-reveal;
+    animation-range: entry 0% cover 30%;
   }
 }
