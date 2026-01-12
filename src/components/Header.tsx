@@ -11,6 +11,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
 import { MenuIcon } from "lucide-react";
 import { ScrollProgress } from "./ui/ScrollProgress";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -45,9 +46,12 @@ export default function Header() {
                         <li className="row-span-3">
                           <NavigationMenuLink asChild>
                             <span className="overflow-hidden from-muted/50 to-muted flex h-full p-[0] w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden transition-all duration-200 select-none focus:shadow-md">
-                              <img
+                              <Image
+                                alt="A couple and their dog on the beach in the rain"
                                 src="/nav/nav_about.png"
-                                className="h-full w-full object-cover"
+                                width={400}
+                                height={400}
+                                className="object-cover"
                               />
                             </span>
                           </NavigationMenuLink>

@@ -7,7 +7,7 @@ const stepData = [
     heading: "browse & inspire",
     content:
       "Sed in tellus tortor. Pellentesque mattis ut lectus quis pellentesque. Donec euismod faucibus leo sed commodo. Integer aliquam ipsum nec justo consequat, sed vulputate erat tincidunt. Nam aliquet justo id lectus consectetur, ac congue urna porttitor. Nam et ornare leo, nec rutrum tellus. Quisque sed leo quis erat tincidunt vestibulum. Vivamus vel tellus quis sem blandit eleifend. In hac habitasse platea dictumst. Integer eu fermentum nibh, et sagittis ligula. Suspendisse leo arcu, varius ut consequat id, semper eu erat. Nunc mollis dui eu aliquam bibendum. Curabitur vel justo feugiat, molestie sem porta, iaculis lacus. Praesent at luctus nisl, sit amet ornare est. Proin sodales eros eget tortor fermentum, ut feugiat enim rutrum. Nam lacinia id est at dapibus.",
-    image: "/home/home_hero.webp",
+    image: "/method/method_1.png",
     alt: "alt text",
   },
   {
