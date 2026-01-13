@@ -45,12 +45,11 @@ export default function Header() {
                       <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                         <li className="row-span-3">
                           <NavigationMenuLink asChild>
-                            <span className="overflow-hidden from-muted/50 to-muted flex h-full p-[0] w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden transition-all duration-200 select-none focus:shadow-md">
+                            <span className="relative overflow-hidden from-muted/50 to-muted flex h-full p-[0] w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden transition-all duration-200 select-none focus:shadow-md">
                               <Image
                                 alt="A couple and their dog on the beach in the rain"
                                 src="/nav/nav_about.png"
-                                width={400}
-                                height={400}
+                                fill
                                 className="object-cover"
                               />
                             </span>
