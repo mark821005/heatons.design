@@ -17,6 +17,18 @@ const myData = [
     src: "/about/about_4.png",
     alt: "Project Beta",
   },
+  {
+    src: "/about/about_5.png",
+    alt: "Project Alpha",
+  },
+  {
+    src: "/about/about_6.png",
+    alt: "Project Beta",
+  },
+  {
+    src: "/about/about_7.png",
+    alt: "Project Beta",
+  },
 ];
 
 export default function About() {
@@ -55,7 +67,7 @@ export default function About() {
                 rest. Every piece is created digitally and tailored to your
                 brief, allowing me to produce original, one-of-a-kind artwork at
                 a fraction of the cost of traditional methods, with prices
-                starting at just £55.
+                starting at just £65.
               </p>
 
               <p>
