@@ -38,21 +38,25 @@ export default function Methodology() {
     <AnimatedPage>
       <main>
         <Leftright
-          heading={"welcome to heatons.design"}
+          heading={
+            "just supply your ideas and subject images and leave the rest to me."
+          }
           content={
             <div className="scrolling-text">
               <p>
-                Do you have something you'd like to create? You might have a
-                strong idea already of what you would like to make and that's
-                great if so, the stronger the brief you can supply, the better.
-                If not, however, it's no problem. You might find inspiration by
-                browsing the examples on this site or you might simply know that
-                you want to include a person and something they do, for example
-                a daughter who loves to dance, a son who is into dinosaurs or a
-                grandad who loves to garden.
+                Custom commissions, tailored to your story. I collaborate with
+                clients to create bespoke artwork that celebrates the people and
+                passions in their lives. You don't need a perfect brief to
+                start, only a subject. Whether it's a daughter captured in
+                mid-dance or a tribute to a loyal pet, I can transform your
+                subject into personalised art. Unsure exactly what you want?
+                View the gallery for inspiration or get in touch with your ideas
+                and we can take it from there.
               </p>
               <p>
-                Whatever your ideas might be, they can be imagined and created.
+                Have a project in mind? Let's imagine it together. Below is a
+                step by step guide to how the process might work, but ultimately
+                all I need is a brief and some source images to get started.
               </p>
             </div>
           }
