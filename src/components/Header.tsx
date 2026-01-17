@@ -89,7 +89,7 @@ export default function Header() {
                             </a>
                           </NavigationMenuLink>
                         </li>
-                        <ListItem href="/about" title="Example Gellery">
+                        <ListItem href="/gallery" title="Example Gallery">
                           Re-usable components built using Radix UI and Tailwind
                           CSS.
                         </ListItem>
