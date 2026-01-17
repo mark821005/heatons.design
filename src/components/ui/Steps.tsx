@@ -17,7 +17,7 @@ export function Steps({ items }: StepProps) {
       {items.map((item, index) => (
         <div
           key={index}
-          className=" grid grid-cols-1 md:grid-cols-3 gap-12 mb-24 "
+          className=" grid grid-cols-1 md:grid-cols-3 gap-12 mb-24 overflow-x-clip"
         >
           <div className="md:col-span-1 scrollLeft rounded-2xl overflow-hidden">
             <Image
