@@ -38,20 +38,19 @@ export default function Methodology() {
     <AnimatedPage>
       <main>
         <Leftright
-          heading={
-            "just supply your ideas and subject images and leave the rest to me."
-          }
+          heading={"how it works"}
           content={
             <div className="scrolling-text">
               <p>
-                Custom commissions, tailored to your story. I collaborate with
-                clients to create bespoke artwork that celebrates the people and
-                passions in their lives. You don't need a perfect brief to
-                start, only a subject. Whether it's a daughter captured in
-                mid-dance or a tribute to a loyal pet, I can transform your
-                subject into personalised art. Unsure exactly what you want?
-                View the gallery for inspiration or get in touch with your ideas
-                and we can take it from there.
+                <strong>Custom commissions, tailored to your story.</strong>
+                <br />
+                <br /> I collaborate with clients to create bespoke artwork that
+                celebrates the people and passions in their lives. You don't
+                need a perfect brief to start, only a subject. Whether it's a
+                daughter captured in mid-dance or a tribute to a loyal pet, I
+                can transform your subject into personalised art. Unsure exactly
+                what you want? View the gallery for inspiration or get in touch
+                with your ideas and we can take it from there.
               </p>
               <p>
                 Have a project in mind? Let's imagine it together. Below is a
