@@ -179,4 +179,10 @@ export const galleryData = [
     categories: ["kids", "animals"],
     ref: "HD0030",
   },
+  {
+    src: "/gallery/gallery_031.png",
+    alt: "Project Beta",
+    categories: ["kids"],
+    ref: "HD0031",
+  },
 ];
