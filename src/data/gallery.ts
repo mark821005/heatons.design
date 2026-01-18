@@ -137,4 +137,46 @@ export const galleryData = [
     categories: ["kids", "animals"],
     ref: "HD0023",
   },
+  {
+    src: "/gallery/gallery_024.png",
+    alt: "Project Beta",
+    categories: ["celebrity"],
+    ref: "HD0024",
+  },
+  {
+    src: "/gallery/gallery_025.png",
+    alt: "Project Beta",
+    categories: ["people", "seasonal"],
+    ref: "HD0025",
+  },
+  {
+    src: "/gallery/gallery_026.png",
+    alt: "Project Beta",
+    categories: ["kids", "seasonal"],
+    ref: "HD0026",
+  },
+  {
+    src: "/gallery/gallery_027.png",
+    alt: "Project Beta",
+    categories: ["celebrity"],
+    ref: "HD0027",
+  },
+  {
+    src: "/gallery/gallery_028.png",
+    alt: "Project Beta",
+    categories: ["celebrity"],
+    ref: "HD0028",
+  },
+  {
+    src: "/gallery/gallery_029.png",
+    alt: "Project Beta",
+    categories: ["celebrity"],
+    ref: "HD0029",
+  },
+  {
+    src: "/gallery/gallery_030.png",
+    alt: "Project Beta",
+    categories: ["kids", "animals"],
+    ref: "HD0030",
+  },
 ];
