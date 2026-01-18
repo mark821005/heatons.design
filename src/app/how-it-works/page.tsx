@@ -49,8 +49,12 @@ export default function Methodology() {
                 need a perfect brief to start, only a subject. Whether it's a
                 daughter captured in mid-dance or a tribute to a loyal pet, I
                 can transform your subject into personalised art. Unsure exactly
-                what you want? View the gallery for inspiration or get in touch
-                with your ideas and we can take it from there.
+                what you want?{" "}
+                <a href="/gallery" title="Go to gallery page">
+                  View the gallery
+                </a>{" "}
+                for inspiration or get in touch with your ideas and we can take
+                it from there.
               </p>
               <p>
                 Have a project in mind? Let's imagine it together. Below is a
