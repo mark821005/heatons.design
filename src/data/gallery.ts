@@ -12,9 +12,9 @@ export const galleryData = [
     ref: "HD0002",
   },
   {
-    src: "/gallery/gallery_003.webp",
+    src: "/gallery/gallery_003.png",
     alt: "Project Beta",
-    categories: ["people", "animals"],
+    categories: ["people", "animals", "interests"],
     ref: "HD0003",
   },
   {
@@ -184,5 +184,29 @@ export const galleryData = [
     alt: "Project Beta",
     categories: ["kids"],
     ref: "HD0031",
+  },
+  {
+    src: "/gallery/gallery_032.png",
+    alt: "Project Beta",
+    categories: ["animals"],
+    ref: "HD0032",
+  },
+  {
+    src: "/gallery/gallery_033.png",
+    alt: "Project Beta",
+    categories: ["animals"],
+    ref: "HD0033",
+  },
+  {
+    src: "/gallery/gallery_034.png",
+    alt: "Project Beta",
+    categories: ["animals"],
+    ref: "HD0034",
+  },
+  {
+    src: "/gallery/gallery_035.png",
+    alt: "Project Beta",
+    categories: ["animals"],
+    ref: "HD0035",
   },
 ];
