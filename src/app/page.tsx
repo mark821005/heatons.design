@@ -3,6 +3,7 @@ import Hero from "@/components/ui/Hero";
 import RoundBox from "@/components/ui/roundbox";
 import { ImageGrid } from "@/components/ui/ImageGrid";
 import { AnimatedPage } from "@/components/AnimatedPage";
+import { l } from "node_modules/react-router/dist/development/index-react-server-client-Cv5Q9lf0";
 
 const myData = [
   {
@@ -42,11 +43,15 @@ const roundBoxData = [
     heading: "02 Consultation / Sourcing",
     content:
       "Once you've decided what you'd like to create, I just need a brief from you to get started. The more descriptive you can be, the better! I'll also request some source images to work from so that if it's your cat in your piece, the result actually looks like your cat! Every piece is customised to you.",
+    link: "/how-it-works",
+    buttonText: "Learn more",
   },
   {
     heading: "03 Proofing & Printing",
     content:
       "Once your brief is finalised, I'll get to work and create your piece. You'll receive a proof via email to approve with amends available of anything isn't quite right. After your approval, I'll move onto artboarding and arrange printing. All pieces are giclée printed on high quality archival paper.",
+    link: "/printing",
+    buttonText: "Printing",
   },
   {
     heading: "04 Delivery",
