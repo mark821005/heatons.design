@@ -6,7 +6,7 @@ import { AnimatedPage } from "@/components/AnimatedPage";
 
 const myData = [
   {
-    src: "/home/grid_1.webp",
+    src: "/home/grid_1.png",
     alt: "Project Alpha",
   },
   {
@@ -18,7 +18,7 @@ const myData = [
     alt: "Project Beta",
   },
   {
-    src: "/home/grid_4.webp",
+    src: "/home/grid_4.png",
     alt: "Project Beta",
   },
   {
@@ -34,24 +34,24 @@ const roundBoxData = [
   {
     heading: "01 Browse & Inspire",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Think about what you want to depict in your composition - your family, your pet, a relative or friend, even your favourite iconic celebrity. If you need some inspiration, have a look through the gallery page to give you a helping hand.",
     link: "/gallery",
     buttonText: "Browse examples",
   },
   {
     heading: "02 Consultation / Sourcing",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Once you've decided what you'd like to create, I just need a brief from you to get started. The more descriptive you can be, the better! I'll also request some source images to work from so that if it's your cat in your piece, the result actually looks like your cat! Every piece is customised to you.",
   },
   {
     heading: "03 Proofing & Printing",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Once your brief is finalised, I'll get to work and create your piece. You'll receive a proof via email to approve with amends available of anything isn't quite right. After your approval, I'll move onto artboarding and arrange printing. All pieces are giclée printed on high quality archival paper.",
   },
   {
     heading: "04 Delivery",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Your print will be delivered directly to your door at your address of choice, in sturdy and protective packaging to ensure it gets to you in perfect condition. I'll also send you the original artwork digitally which is yours to keep and re-use as you wish. All printing and delivery costs are included in the price of all pieces.",
   },
 ];
 export default function Home() {
