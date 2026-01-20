@@ -10,11 +10,11 @@ const myData = [
     alt: "Project Alpha",
   },
   {
-    src: "/home/grid_2.webp",
+    src: "/home/grid_2.png",
     alt: "Project Beta",
   },
   {
-    src: "/home/grid_3.webp",
+    src: "/home/grid_3.png",
     alt: "Project Beta",
   },
   {
@@ -22,11 +22,11 @@ const myData = [
     alt: "Project Beta",
   },
   {
-    src: "/home/grid_5.webp",
+    src: "/home/grid_5.png",
     alt: "Project Beta",
   },
   {
-    src: "/home/grid_6.webp",
+    src: "/home/grid_6.png",
     alt: "Project Beta",
   },
 ];
