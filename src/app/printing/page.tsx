@@ -37,7 +37,7 @@ export default function Printing() {
       <main>
         <ImageTextText
           heading={"printing"}
-          image={"/about/about_1.png"}
+          image={"/printing/printing_1.jpg"}
           alt={"alt text"}
           linkOne={"/how-it-works"}
           buttonTextOne="How it works"
