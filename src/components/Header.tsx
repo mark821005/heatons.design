@@ -70,7 +70,7 @@ export default function Header() {
                     </NavigationMenuContent>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger>Work</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>Custom Work</NavigationMenuTrigger>
                     <NavigationMenuContent className="right-0 md:left-auto">
                       <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                         <li className="row-span-3">
@@ -195,14 +195,20 @@ export default function Header() {
                     <Link href="/" className="border-b pb-2">
                       Home
                     </Link>
-                    <Link href="/about" className="border-b pb-2">
+                    <strong>About</strong>
+                    <Link href="/about" className="border-b pb-2 pl-3">
                       About
                     </Link>
-                    <div>
-                      <Link href="/about" className=" px-2 text-sm">
-                        About
-                      </Link>
-                    </div>
+                    <Link href="/how-it-works" className="border-b pb-2 pl-3">
+                      How it works
+                    </Link>
+                    <Link href="/printing" className="border-b pb-2 pl-3">
+                      Printing
+                    </Link>
+                    <strong>Custom Work</strong>
+                    <Link href="/gallery" className="border-b pb-2 pl-3">
+                      Gallery
+                    </Link>
                     <Link href="/contact" className="border-b pb-2">
                       Contact
                     </Link>
