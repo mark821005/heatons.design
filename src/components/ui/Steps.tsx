@@ -1,10 +1,14 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { ArrowUpRight } from "lucide-react";
 
 interface Steps {
   heading: string;
   content: string;
   image: string;
   alt: string;
+  link?: string;
+  buttonText?: string;
 }
 
 interface StepProps {
@@ -32,6 +36,15 @@ export function Steps({ items }: StepProps) {
               {index + 1}: {item.heading}
             </h2>
             {item.content}
+            {item.link && (
+              <div className="mt-6">
+                <a href={item.link} rel="noopener noreferrer">
+                  <Button size="sm" className="mt-2">
+                    {item.buttonText || "Learn More"} <ArrowUpRight />
+                  </Button>
+                </a>
+              </div>
+            )}
           </div>
         </div>
       ))}
