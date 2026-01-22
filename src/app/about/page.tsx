@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import { AnimatedPage } from "@/components/AnimatedPage";
 import ImageTextText from "@/components/ui/ImageTextText";
 import { ImageGrid } from "@/components/ui/ImageGrid";
@@ -14,7 +13,7 @@ const myData = [
     alt: "Project Beta",
   },
   {
-    src: "/about/about_4.png",
+    src: "/about/about_4.webp",
     alt: "Project Beta",
   },
   {
