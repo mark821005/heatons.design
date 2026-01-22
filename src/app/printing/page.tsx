@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import { AnimatedPage } from "@/components/AnimatedPage";
 import ImageTextText from "@/components/ui/ImageTextText";
 import { ImageGrid } from "@/components/ui/ImageGrid";
@@ -37,7 +36,7 @@ export default function Printing() {
       <main>
         <ImageTextText
           heading={"printing"}
-          image={"/printing/printing_1.jpg"}
+          image={"/printing/printing_1.png"}
           alt={"alt text"}
           linkOne={"/how-it-works"}
           buttonTextOne="How it works"

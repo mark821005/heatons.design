@@ -47,7 +47,7 @@ export default function Header() {
                           <NavigationMenuLink asChild>
                             <span className="relative overflow-hidden from-muted/50 to-muted flex h-full p-[0] w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden transition-all duration-200 select-none focus:shadow-md">
                               <Image
-                                alt="A couple and their dog on the beach in the rain"
+                                alt="Whimsical illustration of a German Shepherd dog"
                                 src="/nav/nav_about_thumb.png"
                                 fill
                                 className="object-cover"
@@ -75,16 +75,14 @@ export default function Header() {
                       <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                         <li className="row-span-3">
                           <NavigationMenuLink asChild>
-                            <a
-                              className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-4 no-underline outline-hidden transition-all duration-200 select-none focus:shadow-md md:p-6"
-                              href="/"
-                            >
-                              <div className="">
-                                <span className="scroll-m-20 text-2xl font-serif">
-                                  heatons.design
-                                </span>
-                              </div>
-                            </a>
+                            <span className="relative overflow-hidden from-muted/50 to-muted flex h-full p-[0] w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden transition-all duration-200 select-none focus:shadow-md">
+                              <Image
+                                alt="Playful illustration of a couple wearing their favourite football teams shirts with their black and white cat"
+                                src="/nav/nav_work_thumb.png"
+                                fill
+                                className="object-cover"
+                              />
+                            </span>
                           </NavigationMenuLink>
                         </li>
                         <ListItem href="/gallery" title="Example Gallery">
@@ -92,7 +90,7 @@ export default function Header() {
                           CSS.
                         </ListItem>
                         <ListItem
-                          href="/docs/installation"
+                          href="/case-studies"
                           title="Case Studies"
                         >
                           How to install dependencies and structure your app.
