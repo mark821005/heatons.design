@@ -5,27 +5,27 @@ import { ImageGrid } from "@/components/ui/ImageGrid";
 
 const myData = [
   {
-    src: "/about/about_2.png",
+    src: "/printing/printing_2.png",
     alt: "Project Alpha",
   },
   {
-    src: "/about/about_3.png",
+    src: "/printing/printing_3.png",
     alt: "Project Beta",
   },
   {
-    src: "/about/about_4.png",
+    src: "/printing/printing_4.png",
     alt: "Project Beta",
   },
   {
-    src: "/about/about_5.png",
+    src: "/printing/printing_5.png",
     alt: "Project Alpha",
   },
   {
-    src: "/about/about_6.png",
+    src: "/printing/printing_6.png",
     alt: "Project Beta",
   },
   {
-    src: "/about/about_7.png",
+    src: "/printing/printing_7.png",
     alt: "Project Beta",
   },
 ];
