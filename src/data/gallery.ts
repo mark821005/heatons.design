@@ -212,7 +212,7 @@ export const galleryData = [
   {
     src: "/gallery/gallery_036.png",
     alt: "Project Beta",
-    categories: ["celebrity"],
+    categories: ["celebrity", "interests"],
     ref: "HD0036",
   },
 ];

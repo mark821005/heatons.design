@@ -238,6 +238,10 @@
   button {
     cursor: pointer;
   }
+  .hoverTrigger {
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+  }
   @keyframes text-highlight {
     from {
       color: rgb(161 161 170); /* zinc-400 (light gray) */
@@ -283,12 +287,18 @@
   }
 
   /* Smooth Blur for the Header/Nav */
-  body:has([data-state="open"]) main,
-  body:has([data-state="open"]) footer {
+  body:has([data-state="open"]) main > *:not(:has([data-state="open"])) {
     filter: blur(7px) grayscale(50%);
     opacity: 0.6;
     pointer-events: none;
     transition: all 0.4s ease-out;
+  }
+
+  /* Also blur the footer as usual */
+  body:has([data-state="open"]) footer {
+    filter: blur(7px) grayscale(50%);
+    opacity: 0.6;
+    pointer-events: none;
   }
 
   /* Your Scroll-Driven Animation Classes */

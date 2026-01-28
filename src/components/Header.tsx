@@ -5,11 +5,12 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, SquareArrowOutUpRight } from "lucide-react";
 import { ScrollProgress } from "./ui/ScrollProgress";
 import Image from "next/image";
 
@@ -89,10 +90,7 @@ export default function Header() {
                           Re-usable components built using Radix UI and Tailwind
                           CSS.
                         </ListItem>
-                        <ListItem
-                          href="/case-studies"
-                          title="Case Studies"
-                        >
+                        <ListItem href="/case-studies" title="Case Studies">
                           How to install dependencies and structure your app.
                         </ListItem>
                         <ListItem
@@ -110,19 +108,17 @@ export default function Header() {
                       <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                         <li className="row-span-3">
                           <NavigationMenuLink asChild>
-                            <a
-                              className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-4 no-underline outline-hidden transition-all duration-200 select-none focus:shadow-md md:p-6"
-                              href="/"
-                            >
-                              <div className="">
-                                <span className="scroll-m-20 text-2xl font-serif">
-                                  heatons.design
-                                </span>
-                              </div>
-                            </a>
+                            <span className="relative overflow-hidden from-muted/50 to-muted flex h-full p-[0] w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden transition-all duration-200 select-none focus:shadow-md">
+                              <Image
+                                alt="Illustration of a little girl with blonde hair in the snow"
+                                src="/nav/nav_pricing_thumb.png"
+                                fill
+                                className="object-cover"
+                              />
+                            </span>
                           </NavigationMenuLink>
                         </li>
-                        <ListItem href="/about" title="Introduction">
+                        <ListItem href="/pricing" title="Pricing">
                           Re-usable components built using Radix UI and Tailwind
                           CSS.
                         </ListItem>
@@ -140,6 +136,20 @@ export default function Header() {
                         </ListItem>
                       </ul>
                     </NavigationMenuContent>
+                  </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <NavigationMenuLink
+                      asChild
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      <Link
+                        href="https://www.etsy.com/"
+                        target="_blank"
+                        className="flex-row items-center gap-1"
+                      >
+                        Shop <SquareArrowOutUpRight className="size-4" />
+                      </Link>
+                    </NavigationMenuLink>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
                     <NavigationMenuTrigger>Contact</NavigationMenuTrigger>
