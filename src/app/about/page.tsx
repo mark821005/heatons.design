@@ -66,7 +66,7 @@ export default function About() {
                 rest. Every piece is created digitally and tailored to your
                 brief, allowing me to produce original, one-of-a-kind artwork at
                 a fraction of the cost of traditional methods, with prices
-                starting at just £65.
+                starting at just £55.
               </p>
 
               <p>
@@ -83,7 +83,7 @@ export default function About() {
                 <strong>What's included in the cost?</strong>
               </p>
 
-              <p>Inlcuded in all pieces:</p>
+              <p>Included in all pieces:</p>
               <ul>
                 <li>
                   Production of a unique, bespoke artwork (or multiples
